@@ -206,38 +206,6 @@
     {
       "adress": "",
       "phone": "",
-      "totalPrice": 58,
-      "subtotalPrice": 38,
-      "totalNumber": 3,
-      "deliveryFee": 20,
-      "products": [
-        {
-          "id": "cake",
-          "amount": 1,
-          "price": 9,
-          "priceSingle": 9,
-          "name": "Zio Stefano's Doughnut"
-        },
-        {
-          "id": "breakfast",
-          "amount": 1,
-          "price": 9,
-          "priceSingle": 9,
-          "name": "Zia Giulia's Breakfast"
-        },
-        {
-          "id": "pizza",
-          "amount": 1,
-          "price": 20,
-          "priceSingle": 20,
-          "name": "Nonna Alba's Pizza"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "adress": "Darwina 12 ",
-      "phone": "505-303-505",
       "totalPrice": 29,
       "subtotalPrice": 9,
       "totalNumber": 1,
@@ -251,7 +219,7 @@
           "name": "Zio Stefano's Doughnut"
         }
       ],
-      "id": 2
+      "id": 1
     }
   ]
 }
