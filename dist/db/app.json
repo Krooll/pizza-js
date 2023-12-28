@@ -210,7 +210,7 @@
     "events": [
       {
         "id": 1,
-        "date": "2023-12-19",
+        "date": "2023-12-31",
         "hour": "12:30",
         "table": 1,
         "repeat": false,
@@ -220,17 +220,17 @@
       },
       {
         "id": 2,
-        "date": "2023-12-19",
+        "date": "2023-12-27",
         "hour": "16:00",
         "table": 3,
         "repeat": "daily",
         "duration": 2,
-        "ppl": 3,
+        "ppl": 3, 
         "starters": ["bread", "lemonWater"]
       },
       {
         "id": 3,
-        "date": "2023-12-19",
+        "date": "2023-12-28",
         "hour": "12:00",
         "table": 3,
         "repeat": "daily",
@@ -240,7 +240,7 @@
       },
       {
         "id": 4,
-        "date": "2023-12-18",
+        "date": "2023-12-28",
         "hour": "13:00",
         "table": 2,
         "repeat": "daily",
@@ -250,7 +250,7 @@
       },
       {
         "id": 5,
-        "date": "2023-12-18",
+        "date": "2023-12-29",
         "hour": "18:00",
         "table": 2,
         "repeat": "daily",
@@ -259,5 +259,16 @@
         "starters": ["lemonWater"]
       }
     ],
-    "bookings": []
+    "bookings": [
+      {
+         "id": 1,
+         "date": "2023-12-30",
+         "hour": "12:30",
+         "table": 1,
+         "repeat": false,
+         "duration": 4,
+         "ppl": 3,
+         "starters": []
+       }
+    ]
  }
