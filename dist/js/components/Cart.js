@@ -87,6 +87,8 @@ class Cart {
       thisCart.dom.totalPrice.forEach(element => {
         element.innerHTML = thisCart.totalPrice;
       });
+
+      console.log('subtotalprice', thisCart.subtotalPrice)
     }
 
     remove(event){

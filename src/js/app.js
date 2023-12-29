@@ -119,7 +119,7 @@ import Home from "./components/Home.js";
       thisApp.initData();
       thisApp.initCart();
       thisApp.initBooking();
-      thisApp.initHome(app);
+      thisApp.initHome();
     },
   };
 
