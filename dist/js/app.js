@@ -87,8 +87,8 @@ import Home from "./components/Home.js";
 
     initHome: function(){
       const thisApp = this;
-      const homeElem = document.querySelector(select.containerOf.home);
-      thisApp.homeElem = new Home(homeElem, thisApp);
+      const homeElement = document.querySelector(select.containerOf.home);
+      thisApp.homeElement = new Home(homeElement, thisApp);
     },
 
     initCart: function(){
@@ -119,7 +119,7 @@ import Home from "./components/Home.js";
       thisApp.initData();
       thisApp.initCart();
       thisApp.initBooking();
-      thisApp.initHome();
+      thisApp.initHome(app);
     },
   };
 

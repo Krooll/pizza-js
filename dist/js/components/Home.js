@@ -14,7 +14,7 @@ class Home {
     const generatedHTML = templates.homeWidget();
     thisHome.element = utils.createDOMFromHTML(generatedHTML);
     const homeContainer = document.querySelector(select.containerOf.home);
-    homeContainer.appendChild(thisHome.element).innerHTML;
+    homeContainer.appendChild(thisHome.element);
     thisHome.dom = {};
     thisHome.dom.wrapper = element;
     thisHome.dom.homeHeader = document.querySelector(select.home.homeHeader);
