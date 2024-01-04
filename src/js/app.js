@@ -103,6 +103,7 @@ import Home from "./components/Home.js";
         app.cart.add(e.detail.product);
       });
     },
+    
     initBooking: function(){
       const thisApp = this;
 
@@ -125,3 +126,5 @@ import Home from "./components/Home.js";
 
   app.init();
 
+
+  export default app;

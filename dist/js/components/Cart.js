@@ -56,9 +56,9 @@ class Cart {
       const generateDOM = utils.createDOMFromHTML(generateHTML);
       thisCart.dom.productList.appendChild(generateDOM);
       thisCart.products.push(new CartProduct(menuProduct, generateDOM));
-      thisCart.update();
       const inputField = generateDOM.querySelector('.amount');
       inputField.value = menuProduct.amount;
+      thisCart.update();
     }
 
     update(){
@@ -87,8 +87,6 @@ class Cart {
       thisCart.dom.totalPrice.forEach(element => {
         element.innerHTML = thisCart.totalPrice;
       });
-
-      console.log('subtotalprice', thisCart.subtotalPrice)
     }
 
     remove(event){

@@ -1,10 +1,11 @@
 import { templates, select } from '../settings.js';
 import utils from '../utils.js';
+import app from '../app.js';
 
 class Home {
-  constructor(app){
+  constructor(){
     const thisHome = this;
-    thisHome.app = app;
+   
     thisHome.render();
     thisHome.initActions();
   }
@@ -23,10 +24,12 @@ class Home {
   initActions() {
     const thisHome = this;
     thisHome.dom.homeHeader.addEventListener('click', function(event){
+      console.log('clicked')
       event.preventDefault();
-      let pageId = event.target.offsetParent.getAttribute(select.home.dataId);
+      let pageId = event.target.getAttribute(select.home.dataId);
       if (pageId) {
-        thisHome.app.activatePage(pageId);
+        //thisHome.app.activatePage(pageId);
+        app.activatePage(pageId);
       }
     });
   }

@@ -95,6 +95,7 @@ class Product {
 
       // set price to default price
       let price = thisProduct.data.price;
+      console.log('thisproduct', price)
 
       // for every category (param)...
       for(let paramId in thisProduct.data.params) {
@@ -132,7 +133,7 @@ class Product {
         }
       }
       //multiply price by amount//
-      price *=  thisProduct.amountWidget.value;
+      price *= thisProduct.amountWidget.value;
       // update calculated price in the HTML
       thisProduct.priceSingle = price;
       thisProduct.dom.priceElem.innerHTML = price;
@@ -170,7 +171,7 @@ class Product {
         name: thisProduct.data.name,
         amount: thisProduct.amountWidget.value,
         priceSingle: thisProduct.priceSingle,
-        price: thisProduct.priceSingle * thisProduct.amountWidget.value,
+        price: thisProduct.priceSingle,
         params: thisProduct.prepareCartProductParams(),
       };
 
