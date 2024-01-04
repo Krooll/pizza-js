@@ -1,11 +1,12 @@
 import { templates, select } from '../settings.js';
 import utils from '../utils.js';
-import app from '../app.js';
 
 class Home {
-  constructor(){
+  constructor(activatePage){
     const thisHome = this;
    
+    thisHome.app = activatePage;
+    console.log('thisHomeApp',thisHome.app)
     thisHome.render();
     thisHome.initActions();
   }
@@ -18,18 +19,17 @@ class Home {
     homeContainer.appendChild(thisHome.element);
     thisHome.dom = {};
     thisHome.dom.wrapper = element;
-    thisHome.dom.homeHeader = document.querySelector(select.home.homeHeader);
+    thisHome.dom.homeContainer = document.querySelector(select.home.homeHeader);
   }
 
   initActions() {
     const thisHome = this;
-    thisHome.dom.homeHeader.addEventListener('click', function(event){
-      console.log('clicked')
+    thisHome.dom.homeContainer.addEventListener('click', function(event){
       event.preventDefault();
-      let pageId = event.target.getAttribute(select.home.dataId);
+      let pageId = event.target.offsetParent.getAttribute(select.home.dataId);
       if (pageId) {
         //thisHome.app.activatePage(pageId);
-        app.activatePage(pageId);
+        thisHome.app.activatePage(pageId);
       }
     });
   }

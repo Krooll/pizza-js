@@ -95,7 +95,6 @@ class Product {
 
       // set price to default price
       let price = thisProduct.data.price;
-      console.log('thisproduct', price)
 
       // for every category (param)...
       for(let paramId in thisProduct.data.params) {

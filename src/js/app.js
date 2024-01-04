@@ -1,8 +1,8 @@
-import { settings,select, classNames } from "./settings.js";
+import { settings, select, classNames } from "./settings.js";
 import Product from "./components/Product.js";
 import Cart from "./components/Cart.js";
 import Booking from "./components/Booking.js";
-import Home from "./components/Home.js";
+import Home from "./components/Home.js";;
 
   const app = {
     initPages: function(){
@@ -88,7 +88,7 @@ import Home from "./components/Home.js";
     initHome: function(){
       const thisApp = this;
       const homeElement = document.querySelector(select.containerOf.home);
-      thisApp.homeElement = new Home(homeElement, thisApp);
+      thisApp.homeElement = new Home(thisApp,homeElement);
     },
 
     initCart: function(){
@@ -125,6 +125,3 @@ import Home from "./components/Home.js";
   };
 
   app.init();
-
-
-  export default app;
