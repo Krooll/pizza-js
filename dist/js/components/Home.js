@@ -6,7 +6,6 @@ class Home {
     const thisHome = this;
    
     thisHome.app = activatePage;
-    console.log('thisHomeApp',thisHome.app)
     thisHome.render();
     thisHome.initActions();
   }
