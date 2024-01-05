@@ -51,8 +51,7 @@ class Cart {
 
     add(menuProduct){
       const thisCart = this;
-
-      menuProduct.priceSingle = menuProduct.price / menuProduct.amount;
+      
       const generateHTML = templates.cartProduct(menuProduct);
       const generateDOM = utils.createDOMFromHTML(generateHTML);
       thisCart.dom.productList.appendChild(generateDOM);

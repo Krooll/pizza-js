@@ -131,10 +131,10 @@ class Product {
           }
         }
       }
+      thisProduct.priceSingle = price;
       //multiply price by amount//
       price *= thisProduct.amountWidget.value;
       // update calculated price in the HTML
-      thisProduct.priceSingle = price;
       thisProduct.dom.priceElem.innerHTML = price;
     }
 
@@ -170,9 +170,11 @@ class Product {
         name: thisProduct.data.name,
         amount: thisProduct.amountWidget.value,
         priceSingle: thisProduct.priceSingle,
-        price: thisProduct.priceSingle,
+        price: thisProduct.priceSingle * thisProduct.amountWidget.value,
         params: thisProduct.prepareCartProductParams(),
       };
+
+      console.log('productsSummary', productSummary)
 
       return productSummary;
     }
